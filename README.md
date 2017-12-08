@@ -17,3 +17,7 @@ In it's current state it is designed to be hosted on a Raspberry Pi. Detailed ar
   - The bot is usually used between 11:30am and 12:30pm, therefore it makes sense for the logic to run in this timeframe. To start the Bot, this line was added to CRON file in my case: `25 11 * * 1-5 /home/pi/LunchBot/LM_Bot.py`
   - To stop the Bot at 12:35, this line is added to CRON: `35 12 * * 1-5 kilall -9 LM_Bot.py`
 7. That's it, you're all set!
+
+## Seting up the Bot for the first time
+1. Head to https://core.telegram.org/bots#6-botfather, follow the steps described there and setup your bot. 
+2. Once you have a unique bot token copy it, edit `LM_Bot.py`, head to line 159 and paste the token between the ''s
