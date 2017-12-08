@@ -156,7 +156,7 @@ def on_callback_query(msg):
         time.sleep(1)
     on_chat_message(GLmsg)
 
-TOKEN = '445481056:AAHmgiwnRkZNsxgtWgNSVN_x2jeXa_lnsQg'
+TOKEN = '<YOUR BOTs TOKEN>'
 
 bot = telepot.Bot(TOKEN)
 answerer = telepot.helper.Answerer(bot)
